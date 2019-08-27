@@ -15,7 +15,10 @@ namespace Distance_Sensor
 {
     public partial class Form1 : Form
     {
-        string mesafe;
+        string mesafe = "0";
+        string deneme = "A";
+        int t = 1;
+        int k = 0;
         DateTime yeni = DateTime.Now;
         int satir = 1;
         int sutun = 1;
@@ -88,6 +91,11 @@ namespace Distance_Sensor
 
 
             }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
         }
     }
 }
